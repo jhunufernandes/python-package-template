@@ -29,7 +29,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "python-docs-generator git+https://github.com/jhunufernandes/python-docs-generator.git@main",
+  "python-docs-generator @ git+https://github.com/jhunufernandes/python-docs-generator.git@main",
 ]
 
 [project.urls]
