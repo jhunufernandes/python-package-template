@@ -4,13 +4,13 @@ on:
     branches:
       - development
 jobs:
-  call-deps:
+  install-deps:
     uses: jhunufernandes/python-github-actions/.github/workflows/deps.yml@main
     with:
-      pip_args: stage
+      extras: stage
   deploy-docs:
     needs:
-      - call-deps
+      - install-deps
     uses: jhunufernandes/python-github-actions/.github/workflows/docs.yml@main
     with:
-      pip_args: stage
+      extras: stage

@@ -8,13 +8,13 @@ on:
     branches:
       - main
 jobs:
-  call-deps:
+  install-deps:
     uses: jhunufernandes/python-github-actions/.github/workflows/deps.yml@main
     with:
-      pip_args: tests
-  call-tests:
+      extras: tests
+  run-tests:
     needs:
-      - call-deps
+      - install-deps
     uses: jhunufernandes/python-github-actions/.github/workflows/tests.yml@main
     with:
-      pip_args: tests
+      extras: tests
