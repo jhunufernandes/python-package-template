@@ -33,11 +33,11 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/jhunufernandes/{{cookiecutter.project_name}}"
-"Bug Tracker" = "https://github.com/jhunufernandes/{{cookiecutter.project_name}}/issues"
-"Source" = "https://github.com/jhunufernandes/{{cookiecutter.project_name}}"
-"Documentation" = "https://jhunufernandes.github.io/{{cookiecutter.project_name}}"
-"Changelog" = "https://github.com/jhunufernandes/{{cookiecutter.project_name}}/releases"
+"Homepage" = "https://github.com/{{cookiecutter.organization_name}}/{{cookiecutter.project_name}}"
+"Bug Tracker" = "https://github.com/{{cookiecutter.organization_name}}/{{cookiecutter.project_name}}/issues"
+"Source" = "https://github.com/{{cookiecutter.organization_name}}/{{cookiecutter.project_name}}"
+"Documentation" = "https://{{cookiecutter.organization_name}}.github.io/{{cookiecutter.project_name}}"
+"Changelog" = "https://github.com/{{cookiecutter.organization_name}}/{{cookiecutter.project_name}}/releases"
 
 [project.optional-dependencies]
 dev = [

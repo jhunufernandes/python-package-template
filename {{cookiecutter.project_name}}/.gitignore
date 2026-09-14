@@ -1,20 +1,20 @@
 # Environments
-*.venv
-*.env
+.venv/
+.env
 
 # Byte-compiled / optimized / DLL files
-__pycache__
-build
-dist
-site
-*.coverage
-*.egg-info
+__pycache__/
+build/
+dist/
+site/
+.coverage
+*.egg-info/
 
 # Cache directories
-*_cache
+*_cache/
 
 # IDEs and editors
-*.vscode
+.vscode/
 
 # OS files
-*.DS_Store
+.DS_Store
