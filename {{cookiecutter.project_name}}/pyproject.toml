@@ -43,6 +43,7 @@ dev = [
   "coverage[toml]",
   "mkdocs",
   "ruff",
+  "ty",
 ]
 tests = [
   "coverage[toml]",
