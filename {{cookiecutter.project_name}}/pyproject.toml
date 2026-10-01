@@ -50,7 +50,7 @@ stage = [
   "build",
   "coverage[toml]",
   "mkdocs",
-  "git+https://github.com/jhunufernandes/python-docs-generator"
+  "python-docs-generator @ git+https://github.com/jhunufernandes/python-docs-generator",
 ]
 
 [tool.coverage.run]
