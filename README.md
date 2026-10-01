@@ -6,6 +6,20 @@ configuration.
 
 ## Usage
 
+### Recommended: on top of github-template
+
+Create the repository from [jhunufernandes/github-template](https://github.com/jhunufernandes/github-template)
+(README, LICENSE, .editorconfig, .gitattributes, generic .gitignore and dependabot.yml), then:
+
+```bash
+git clone git@github.com:<you>/<newproj>.git && cd <newproj>
+cookiecutter gh:jhunufernandes/python-package-template -o .
+```
+
+The generated files are merged into the existing ones: Python ignores are appended
+to `.gitignore`, `.github/` is merged, and the Python-aware `dependabot.yml` replaces
+the generic one.
+
 ### Inside an already cloned (empty) repo
 
 ```bash
