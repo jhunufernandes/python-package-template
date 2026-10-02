@@ -36,8 +36,20 @@ gh repo create <repo> --source . --push
 
 ```
 <project_name>/
-├── .github/workflows/      auto, deploy, docs, release, tests
+├── .github/
+│   ├── settings.yml        repo + branch protection settings (Settings App)
+│   ├── CODEOWNERS          required reviewers
+│   ├── SECURITY.md         security policy
+│   └── workflows/          auto, deploy, docs, release, tests
 ├── src/<project_slug>/     the importable package
-├── tests/
 └── pyproject.toml
+```
+
+## Template's own tests
+
+The template repository ships smoke tests (in `tests/`, not part of the
+generated project) that render the template and verify the output:
+
+```bash
+python -m unittest discover -v
 ```
