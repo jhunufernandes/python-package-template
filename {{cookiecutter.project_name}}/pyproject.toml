@@ -43,24 +43,17 @@ dev = [
   "ruff",
   "ty",
 ]
-tests = [
-  "coverage[toml]",
-]
 stage = [
   "build",
   "coverage[toml]",
   "mkdocs",
-  "git+https://github.com/jhunufernandes/python-docs-generator"
+  "python-docs-generator @ git+https://github.com/jhunufernandes/python-docs-generator",
 ]
 
 [tool.coverage.run]
 branch = true
-command_line = "-m unittest discover -v"
 
 [tool.coverage.report]
-omit = [
-  "tests/*",
-]
 show_missing = true
 exclude_lines = [
     "def _",
@@ -78,19 +71,6 @@ ignore = [
   "ANN003",  # missing-type-kwargs
   "ANN002",  # missing-type-args
   "TID252",  # relative-imports
-]
-
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = [
-  "COM812",  # missing-trailing-comma
-  "D100",  # undocumented-public-module
-  "D101",  # undocumented-public-class
-  "D102",  # undocumented-public-method
-  "D104",  # undocumented-public-package
-  "D106",  # undocumented-public-nested-class
-  "PIE804",  # unnecessary-dict-kwargs
-  "PT009",  # pytest-unittest-assertion
-  "PT027",  # pytest-unittest-raises-assertion
 ]
 
 [tool.ruff.lint.pydocstyle]

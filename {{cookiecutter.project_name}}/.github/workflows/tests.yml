@@ -11,10 +11,10 @@ jobs:
   install-deps:
     uses: jhunufernandes/python-github-actions/.github/workflows/deps.yml@main
     with:
-      extras: tests
+      extras: dev
   run-tests:
     needs:
       - install-deps
     uses: jhunufernandes/python-github-actions/.github/workflows/tests.yml@main
     with:
-      extras: tests
+      extras: dev
